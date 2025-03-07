@@ -16,7 +16,7 @@ int main() {
 
     printf("Ingrese %d valores:\n", n);
     for (int i = 0; i < n; i++) {
-        scanf("%d",*(arre+i));  
+        scanf("%d",(arre+i));  
     }
 
     printf("El arreglo es: ");
@@ -25,7 +25,9 @@ int main() {
         
     }
     printf("\n");
-
+    
+    free (arre); 
+    arre=NULL; 
     
     return 0;
 }
